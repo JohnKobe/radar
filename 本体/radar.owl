@@ -1,0 +1,2425 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/radar#"
+     xml:base="http://www.semanticweb.org/radar"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/radar"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/radar#amplifierType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#amplifierType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#AmplifierType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#angleTraceType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#angleTraceType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#AngleTraceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antenna -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#antenna">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaApplicatedType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#antennaApplicatedType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#AntennaApplicatedType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaFeedSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#antennaFeedSystem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#AntennaFeedSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaFormType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#antennaFormType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#AntennaFormType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaFunctionalType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#antennaFunctionalType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#AntennaFunctionalType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#antennaParameter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#beamScanType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#beamScanType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#BeamScanType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#detectobjectiveType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#detectobjectiveType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#DetectObjectiveType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#digitalDataProcesser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#digitalDataProcesser">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#DigitalDataProcesser"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#digtalSignalProcesser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#digtalSignalProcesser">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#DigitalSignalProcesser"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#frequencyChannel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#frequencyChannel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#FrequencyChannel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#hasComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#RadarTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#SubSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#SubTest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#jammingType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#jammingType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AntijamTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#JammingType"/>
+        <rdfs:comment xml:lang="zh">干扰类型</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#manufacturer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#manufacturer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#Manufacturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#powerAmplifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#powerAmplifier">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#pulseParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#pulseParameter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#Pulse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#receiver -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#receiver">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#Receiver"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#requireField -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#requireField">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#TestCondition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#Field"/>
+        <rdfs:comment xml:lang="zh">场区要求</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#resolution -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#resolution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#Resolution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#signalProcessAbility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#signalProcessAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#SignalProcessAbility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#terminalDisplayer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#terminalDisplayer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#TerminalDisplayer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#testObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#testObject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#RadarTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#transmitter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#transmitter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#Transmitter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#workChannelType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/radar#workChannelType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/radar#WorkChannelType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/radar#VSWR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#VSWR">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testItems"/>
+        <rdfs:comment xml:lang="zh">驻波系数</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#airplaneType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#airplaneType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment>装备机种</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#angleDetectType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#angleDetectType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">测角方式</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaAperture -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antennaAperture">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">天线孔径</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaBeamStability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antennaBeamStability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">天线波束稳定</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaBeamWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antennaBeamWidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">天线波束宽度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaControlor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antennaControlor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">天线控制装置</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaGain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antennaGain">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testItems"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">天线增益</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaLobeWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antennaLobeWidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">天线波瓣宽度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaPattern -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antennaPattern">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testItems"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">天线方向图</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaPolarization -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antennaPolarization">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">极化</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaReciprocity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antennaReciprocity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">互易性</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antennaStructure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antennaStructure">
+        <rdfs:comment xml:lang="zh">天线结构</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antiExplosionAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antiExplosionAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">抗轰炸能力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antiJamAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antiJamAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">抗干扰能力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#antiNuclearAbilit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#antiNuclearAbilit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">抗核爆能力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#anttennaImpedance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#anttennaImpedance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">阻抗</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#azimuthCoverage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#azimuthCoverage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#azimuthResolution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#azimuthResolution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Resolution"/>
+        <rdfs:comment xml:lang="zh">方位分辨力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#bandwidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#bandwidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">带宽</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#beamShape -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#beamShape">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">波束形状</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#beamWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#beamWidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">波束宽度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#brustLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#brustLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">脉冲串长度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#builtInTest -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#builtInTest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">机内测试</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#countermeasureAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#countermeasureAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">抗干扰能力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#countermeasureCommandControlAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#countermeasureCommandControlAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">对抗管理和控制</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#country">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">国别</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#dataOutput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#dataOutput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">数据输出</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#dataTransferAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#dataTransferAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">数据的传输能力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#dataTransferRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#dataTransferRate">
+        <rdfs:comment xml:lang="zh">数据率</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#dataTransformAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#dataTransformAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#SignalProcessAbility"/>
+        <rdfs:comment xml:lang="zh">数据变换能力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#detectionAirspace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#detectionAirspace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">探测空域</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#detectionSpan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#detectionSpan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">探测时间</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#developmentDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#developmentDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">研制日期</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#developmentStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#developmentStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">研制状况</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#displayRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#displayRange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">显示量程</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#displayer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#displayer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">显示器</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#distanceResolution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#distanceResolution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Resolution"/>
+        <rdfs:comment xml:lang="zh">距离分辨力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#dynamicExtent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#dynamicExtent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Receiver"/>
+        <rdfs:comment xml:lang="zh">接收机动态范围</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#effectiveFlights -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#effectiveFlights">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testTechPara"/>
+        <rdfs:comment xml:lang="zh">有效航次</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#electricitySource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#electricitySource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">电源</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#electricitySupply -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#electricitySupply">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">电源</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#emissionFrequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#emissionFrequency">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testItems"/>
+        <rdfs:comment xml:lang="zh">发射频率</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#emissionPower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#emissionPower">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">发射功率</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#environment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#environment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Field"/>
+        <rdfs:comment xml:lang="zh">气候和环境</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#equipTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#equipTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment>装备时间</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#facility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#facility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Field"/>
+        <rdfs:comment xml:lang="zh">设施</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#fairwayHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#fairwayHeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testTechPara"/>
+        <rdfs:comment xml:lang="zh">航路高度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#fairwayLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#fairwayLength">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testTechPara"/>
+        <rdfs:comment xml:lang="zh">航路长度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#fairwayShortcut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#fairwayShortcut">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testTechPara"/>
+        <rdfs:comment xml:lang="zh">航路捷径</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#faultTesting -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#faultTesting">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">故障检测能力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#feederLoss -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#feederLoss">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">馈线损耗</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#finalPower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#finalPower">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Transmitter"/>
+        <rdfs:comment xml:lang="zh">发射机末级功率</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#firstSidelobeVoltage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#firstSidelobeVoltage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">第一副瓣电平</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#flights -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#flights">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testTechPara"/>
+        <rdfs:comment xml:lang="zh">飞行航次</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#frequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#frequency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">频率</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#frequencyResponse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#frequencyResponse">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testItems"/>
+        <rdfs:comment xml:lang="zh">幅频特性</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#frequencySynthesizer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#frequencySynthesizer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#RadarSystem"/>
+        <rdfs:comment xml:lang="zh">频率合成器</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#guideAccuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#guideAccuracy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testItems"/>
+        <rdfs:comment xml:lang="zh">制导精度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#hasItem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#hasItem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#SubTest"/>
+        <rdfs:comment>有测试项</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#iffInterrogator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#iffInterrogator">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">IFF询问器</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#inferAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#inferAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#SignalProcessAbility"/>
+        <rdfs:comment xml:lang="zh">二次解算能力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#ioAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#ioAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#SignalProcessAbility"/>
+        <rdfs:comment xml:lang="zh">输入输出能力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#landscape -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#landscape">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Field"/>
+        <rdfs:comment xml:lang="zh">地形</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Field"/>
+        <rdfs:comment xml:lang="zh">地点</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#maintainability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#maintainability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">可维护性</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#majorBeamGain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#majorBeamGain">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">主波束增益</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#majorBeamWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#majorBeamWidth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#majorSignalSource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#majorSignalSource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#RadarSystem"/>
+        <rdfs:comment xml:lang="zh">主信号源</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#mass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#mass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">质量</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#meanPower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#meanPower">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Transmitter"/>
+        <rdfs:comment xml:lang="zh">平均功率</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#meanSidelobeVoltage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#meanSidelobeVoltage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">平均副瓣电平</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#measureAccuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#measureAccuracy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testItems"/>
+        <rdfs:comment xml:lang="zh">测量精度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#mission -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#mission">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:comment xml:lang="zh">任务</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#modulateType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#modulateType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:comment xml:lang="zh">调制类型</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#motility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#motility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">机动性</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#noisyFactor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#noisyFactor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Receiver"/>
+        <rdfs:comment xml:lang="zh">噪声系数</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#noisyTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#noisyTemperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Receiver"/>
+        <rdfs:comment xml:lang="zh">噪声温度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#objective -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#objective">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#RadarTest"/>
+        <rdfs:comment xml:lang="zh">任务目的</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#observationNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#observationNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">观测目标数目</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#operationMode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#operationMode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment>工作方式</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#outputPower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#outputPower">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:comment xml:lang="zh">输出功率</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#overallEfficiency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#overallEfficiency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Transmitter"/>
+        <rdfs:comment xml:lang="zh">总输出功率</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#peakPower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#peakPower">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Transmitter"/>
+        <rdfs:comment xml:lang="zh">峰值功率</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#pitchResolution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#pitchResolution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Resolution"/>
+        <rdfs:comment xml:lang="zh">俯仰角分辨力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#power -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#power">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Transmitter"/>
+        <rdfs:comment xml:lang="zh">功率</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#precision -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#precision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">测量精度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#processPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#processPeriod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testTechPara"/>
+        <rdfs:comment xml:lang="zh">处理周期</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#pulsWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#pulsWidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">脉冲宽度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#pulseFrequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#pulseFrequency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Pulse"/>
+        <rdfs:comment>脉冲重复频率</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#pulsePeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#pulsePeriod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Pulse"/>
+        <rdfs:comment xml:lang="zh">脉冲重复周期</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#pulseWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#pulseWidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Pulse"/>
+        <rdfs:comment xml:lang="zh">脉冲宽度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#qualityFactor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#qualityFactor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testItems"/>
+        <rdfs:comment xml:lang="zh">品质因素</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#radarResolution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#radarResolution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Resolution"/>
+        <rdfs:comment xml:lang="zh">雷达分辨力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#radarType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#radarType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">体制</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#receiverSensitivity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#receiverSensitivity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Receiver"/>
+        <rdfs:comment xml:lang="zh">接收机灵敏度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#receiverTransitterSwitch -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#receiverTransitterSwitch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#RadarSystem"/>
+        <rdfs:comment xml:lang="zh">收发开关</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#reflectorSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#reflectorSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">反射面尺寸</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#reliability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#reliability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">可靠性</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#requirement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#requirement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#RadarTest"/>
+        <rdfs:comment xml:lang="zh">任务来源</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#saleStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#saleStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">销售状况</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#samplePeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#samplePeriod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testTechPara"/>
+        <rdfs:comment xml:lang="zh">采样周期</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#scanPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#scanPeriod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">扫描周期</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#scanPower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#scanPower">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">扫描功率</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#scanType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#scanType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Antenna"/>
+        <rdfs:comment xml:lang="zh">扫描方式</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#standarlizer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#standarlizer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">标准化</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#status">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment>现状</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#targetDetection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#targetDetection">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">目标参数测量</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#targetDetectionAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#targetDetectionAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">抗干扰能力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#targetDetectionAccuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#targetDetectionAccuracy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">目标参数测量精度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#technicalFeature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#technicalFeature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment>技术特点</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#testItems -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#testItems">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#SubTest"/>
+        <rdfs:comment xml:lang="zh">测试项</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#testPoint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#testPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testTechPara"/>
+        <rdfs:comment xml:lang="zh">测量点数</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#testTechPara -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#testTechPara">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#SubTest"/>
+        <rdfs:comment xml:lang="zh">试验技术参数</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#timer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#timer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#RadarSystem"/>
+        <rdfs:comment xml:lang="zh">定时器</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#traceAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#traceAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#SignalProcessAbility"/>
+        <rdfs:comment xml:lang="zh">跟踪能力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#traceAccuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#traceAccuracy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testItems"/>
+        <rdfs:comment xml:lang="zh">跟踪精度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#traceNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#traceNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">跟踪目标数目</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#traceObject -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#traceObject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">跟踪目标</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#transmitterGain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#transmitterGain">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Transmitter"/>
+        <rdfs:comment xml:lang="zh">脉宽功率放大链总增益</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#velocityResolution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#velocityResolution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Resolution"/>
+        <rdfs:comment xml:lang="zh">速度分辨力</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#volume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#volume">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">体积</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#waveEnvelope -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#waveEnvelope">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testItems"/>
+        <rdfs:comment xml:lang="zh">脉冲包络</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#waveForm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#waveForm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:comment xml:lang="zh">波形</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#waveLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#waveLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#PowerAmplifier"/>
+        <rdfs:comment xml:lang="zh">波长</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#waveSpectrum -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#waveSpectrum">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/radar#testItems"/>
+        <rdfs:comment xml:lang="zh">脉冲频谱</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#workHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#workHeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">工作高度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#workHumidity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#workHumidity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">工作湿度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#workTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#workTemperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <rdfs:comment xml:lang="zh">工作温度</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#workingCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/radar#workingCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">工作环境</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/radar#AccurayTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#AccurayTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#SubTest"/>
+        <rdfs:comment xml:lang="zh">动态精度试验</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#AirborneRadar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#AirborneRadar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">机载雷达</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#AmplifierType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#AmplifierType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">发射机类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#AngleTraceType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#AngleTraceType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">角度跟踪方式</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Antenna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#Antenna">
+        <rdfs:comment xml:lang="zh">天线</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#AntennaApplicatedType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#AntennaApplicatedType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">天线工作类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#AntennaFeedSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#AntennaFeedSystem">
+        <rdfs:comment xml:lang="zh">天线馈线系统</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#AntennaFormType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#AntennaFormType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">天线形式类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#AntennaFunctionalType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#AntennaFunctionalType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">天线原理类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#AntiJamSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#AntiJamSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#SubSystem"/>
+        <rdfs:comment xml:lang="zh">雷达抗干扰技术措施库</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#AntiJamType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#AntiJamType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">抗干扰类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#AntijamTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#AntijamTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#SubTest"/>
+        <rdfs:comment xml:lang="zh">抗干扰能力试验</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#BeamScanType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#BeamScanType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">波束扫描方式</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#CivilRadar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#CivilRadar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">民用雷达</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#CountermeasureSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#CountermeasureSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#SubSystem"/>
+        <rdfs:comment xml:lang="zh">对抗控制管理系统</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#DetectObjectiveType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#DetectObjectiveType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">测量的目标参数类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#DigitalDataProcesser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#DigitalDataProcesser">
+        <rdfs:comment xml:lang="zh">数字数据处理机</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#DigitalSignalProcesser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#DigitalSignalProcesser">
+        <rdfs:comment xml:lang="zh">数字信号处理机</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Enumeration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#Enumeration">
+        <rdfs:comment xml:lang="zh">枚举类</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#EnvironmentInvestigationSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#EnvironmentInvestigationSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#SubSystem"/>
+        <rdfs:comment xml:lang="zh">电磁环境侦查接收机</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Field -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#Field">
+        <rdfs:comment xml:lang="zh">场区</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#FrequencyChannel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#FrequencyChannel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">频段</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#JamRadiateSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#JamRadiateSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#SubSystem"/>
+        <rdfs:comment xml:lang="zh">积极的干扰信号源库</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#JammingType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#JammingType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">干扰类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Manufacturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#Manufacturer">
+        <rdfs:comment xml:lang="zh">研制厂商</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#MissileDefenseRadar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#MissileDefenseRadar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">弹道导弹防御雷达</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#OverHorizonRadar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#OverHorizonRadar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">超视距雷达</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#PassiveRadar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#PassiveRadar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">无源雷达</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#PowerAmplifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#PowerAmplifier">
+        <rdfs:comment xml:lang="zh">主振功率放大链发射机</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#PowerTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#PowerTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#SubTest"/>
+        <rdfs:comment xml:lang="zh">动态威力试验</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Pulse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#Pulse">
+        <rdfs:comment xml:lang="zh">脉冲</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Radar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#Radar">
+        <rdfs:comment xml:lang="zh">雷达</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#RadarApplyType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#RadarApplyType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">雷达作用类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#RadarSignalType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#RadarSignalType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">雷达信号类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#RadarSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#RadarSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#SubSystem"/>
+        <rdfs:comment xml:lang="zh">雷达系统</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#RadarTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#RadarTest">
+        <rdfs:comment xml:lang="zh">雷达试验</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Receiver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#Receiver">
+        <rdfs:comment xml:lang="zh">接收机</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#ReliabilityTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#ReliabilityTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#SubTest"/>
+        <rdfs:comment xml:lang="zh">稳定性及可靠性试验</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Resolution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#Resolution">
+        <rdfs:comment xml:lang="zh">分辨力</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#SignalProcessAbility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#SignalProcessAbility">
+        <rdfs:comment xml:lang="zh">雷达信号处理能力</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#SignalProcessType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#SignalProcessType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">信号处理方式</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#SubSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#SubSystem">
+        <rdfs:comment xml:lang="zh">雷达子系统</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#SubTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#SubTest">
+        <rdfs:comment xml:lang="zh">子试验，雷达不同方面性能的子试验</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#SurveillanceRadar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#SurveillanceRadar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">监视雷达</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#SyntheticApertureRadar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#SyntheticApertureRadar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">合成孔径雷达</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#TechParaTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#TechParaTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#SubTest"/>
+        <rdfs:comment xml:lang="zh">静态技术参数试验</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#TerminalDisplayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#TerminalDisplayer">
+        <rdfs:comment xml:lang="zh">终端显示器</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#TestCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#TestCondition">
+        <rdfs:comment xml:lang="zh">试验条件</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#TestType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#TestType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">试验类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#TrackingRadar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#TrackingRadar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Radar"/>
+        <rdfs:comment xml:lang="zh">跟踪雷达</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Transmitter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#Transmitter">
+        <rdfs:comment xml:lang="zh">发射机</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#WorkChannelType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/radar#WorkChannelType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/radar#Enumeration"/>
+        <rdfs:comment xml:lang="zh">工作频段类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Agave舰载机用轻型多功能雷达 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#Agave舰载机用轻型多功能雷达">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AirborneRadar"/>
+        <frequencyChannel rdf:resource="http://www.semanticweb.org/radar#X"/>
+        <manufacturer rdf:resource="http://www.semanticweb.org/radar#Thomson-CSF_MarcelDassault"/>
+        <transmitter rdf:resource="http://www.semanticweb.org/radar#磁控管型"/>
+        <airplaneType xml:lang="zh">Super Etendard, Jaguar, Mirage出口型, Mirage 50, Alpha</airplaneType>
+        <antennaStructure xml:lang="zh">倒置卡塞格伦</antennaStructure>
+        <azimuthCoverage xml:lang="zh">方位70°上下，仰角30°上下</azimuthCoverage>
+        <beamWidth xml:lang="zh">6°，12°</beamWidth>
+        <country xml:lang="zh">法国</country>
+        <detectionAirspace xml:lang="zh">空空 18Km-28km
+空海 40km-45km</detectionAirspace>
+        <developmentDate xml:lang="zh">1973年在巴黎国际航展上首次展出 1976年空中试验成功</developmentDate>
+        <developmentStatus xml:lang="zh">由早期RH370直升机雷达发展而来</developmentStatus>
+        <displayer xml:lang="zh">平视显示器，下视显示器（CRT），活动图像显示器</displayer>
+        <equipTime xml:lang="zh">1977年</equipTime>
+        <mass xml:lang="zh">48千克</mass>
+        <operationMode xml:lang="zh">空空，空地，突防，空海</operationMode>
+        <peakPower xml:lang="zh">70kw</peakPower>
+        <pulseWidth xml:lang="zh">0.2微秒，1微秒</pulseWidth>
+        <saleStatus xml:lang="zh">已售出170部</saleStatus>
+        <status xml:lang="zh">1980年在法国海军 Super Etendard 飞机上服役， 20世纪90年代后未见报道</status>
+        <technicalFeature xml:lang="zh">Agave（龙舌兰）雷达是一部适于舰载机用的机载火控雷达，具有对空中目标拦截和对地攻击能力。</technicalFeature>
+        <volume xml:lang="zh">0.6m(长）x0.47米（直径）</volume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#FrequencyChannel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#HF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#HF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#FrequencyChannel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#K">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#FrequencyChannel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Ka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#Ka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#FrequencyChannel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Ku -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#Ku">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#FrequencyChannel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#L -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#L">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#FrequencyChannel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#MOPA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#MOPA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AmplifierType"/>
+        <rdfs:comment xml:lang="zh">主振放大式发射机，MasterOscillatorPowerAmplifier</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#P -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#P">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#FrequencyChannel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#S -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#S">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#FrequencyChannel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#SSO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#SSO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AmplifierType"/>
+        <rdfs:comment xml:lang="zh">单极震荡式发射机，SingleStageOscillator</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#Thomson-CSF_MarcelDassault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#Thomson-CSF_MarcelDassault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#Manufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#UHF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#UHF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#FrequencyChannel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#VHF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#VHF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#FrequencyChannel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#X -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#X">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#FrequencyChannel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#activeJamming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#activeJamming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#JammingType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#civil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#civil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#RadarApplyType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#concealed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#concealed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AngleTraceType"/>
+        <rdfs:comment xml:lang="zh">隐蔽椎雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#conicalScan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#conicalScan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AngleTraceType"/>
+        <rdfs:comment xml:lang="zh">圆锥扫描雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#continuousWave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#continuousWave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#RadarSignalType"/>
+        <rdfs:comment>连续波</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#decimeterwave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#decimeterwave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#WorkChannelType"/>
+        <rdfs:comment xml:lang="zh">分米波雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#designDefinition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#designDefinition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#TestType"/>
+        <rdfs:comment xml:lang="zh">设计定型试验</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#electronical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#electronical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#BeamScanType"/>
+        <rdfs:comment xml:lang="zh">电扫描天线</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#fourDimension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#fourDimension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#DetectObjectiveType"/>
+        <rdfs:comment xml:lang="zh">四维雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#frequencyDiversity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#frequencyDiversity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#SignalProcessType"/>
+        <rdfs:comment xml:lang="zh">频率分集</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#heightDetection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#heightDetection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#DetectObjectiveType"/>
+        <rdfs:comment xml:lang="zh">测高雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#identified-friend-or-foe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#identified-friend-or-foe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#DetectObjectiveType"/>
+        <rdfs:comment xml:lang="zh">敌我识别雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#mechanical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#mechanical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#BeamScanType"/>
+        <rdfs:comment xml:lang="zh">机械扫描天线</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#meterwave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#meterwave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#WorkChannelType"/>
+        <rdfs:comment xml:lang="zh">米波雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#micro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#micro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#WorkChannelType"/>
+        <rdfs:comment xml:lang="zh">微波雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#milimeter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#milimeter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#WorkChannelType"/>
+        <rdfs:comment xml:lang="zh">毫米波雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#military -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#military">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#RadarApplyType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#monopulse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#monopulse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AngleTraceType"/>
+        <rdfs:comment xml:lang="zh">单脉冲雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#objectDetection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#objectDetection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#DetectObjectiveType"/>
+        <rdfs:comment xml:lang="zh">目标识别雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#passiveJamming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#passiveJamming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#JammingType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#planeArrayAntenna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#planeArrayAntenna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AntennaFormType"/>
+        <rdfs:comment xml:lang="zh">平面列阵天线</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#polarityDiversity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#polarityDiversity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#SignalProcessType"/>
+        <rdfs:comment xml:lang="zh">极化分集</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#productDefinition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#productDefinition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#TestType"/>
+        <rdfs:comment xml:lang="zh">生产定型试验</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#pulse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#pulse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#RadarSignalType"/>
+        <rdfs:comment>单脉冲</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#pulseDoppler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#pulseDoppler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#SignalProcessType"/>
+        <rdfs:comment xml:lang="zh">脉冲多普勒</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#qualification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#qualification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#TestType"/>
+        <rdfs:comment xml:lang="zh">鉴定试验</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#receiver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#receiver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AntennaApplicatedType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#reflectorAntenna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#reflectorAntenna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AntennaFormType"/>
+        <rdfs:comment xml:lang="zh">反射面天线</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#sampling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#sampling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#TestType"/>
+        <rdfs:comment xml:lang="zh">抽样试验</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#scientificResearch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#scientificResearch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#TestType"/>
+        <rdfs:comment xml:lang="zh">科研摸底试验</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#shortwave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#shortwave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#WorkChannelType"/>
+        <rdfs:comment xml:lang="zh">短波雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#surfaceAntenna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#surfaceAntenna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AntennaFunctionalType"/>
+        <rdfs:comment xml:lang="zh">口径面天线</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#syntheticAperture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#syntheticAperture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#SignalProcessType"/>
+        <rdfs:comment xml:lang="zh">合成孔径</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#tactic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#tactic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AntiJamType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#targetDIsplay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#targetDIsplay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#SignalProcessType"/>
+        <rdfs:comment xml:lang="zh">目标显示</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#technical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#technical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AntiJamType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#transmitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#transmitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AntennaApplicatedType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#velocityDetection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#velocityDetection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#DetectObjectiveType"/>
+        <rdfs:comment xml:lang="zh">测速雷达</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#wireAntenna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#wireAntenna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#AntennaFunctionalType"/>
+        <rdfs:comment xml:lang="zh">线天线</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/radar#磁控管型 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/radar#磁控管型">
+        <rdf:type rdf:resource="http://www.semanticweb.org/radar#Transmitter"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
