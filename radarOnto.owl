@@ -1,0 +1,1088 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#MainTechnique -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#MainTechnique">
+        <rdfs:label xml:lang="en">MainTechnique</rdfs:label>
+        <rdfs:label xml:lang="zh">关键技术</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Theory"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#aerialType -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#aerialType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="zh">天线类型</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#AerialType"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#天线"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#analysis -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#analysis">
+        <rdfs:label xml:lang="en">analysis</rdfs:label>
+        <rdfs:label xml:lang="zh">结果分析</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ContentUnit"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#application -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#application">
+        <rdfs:label xml:lang="en">application</rdfs:label>
+        <rdfs:label xml:lang="zh">应用到</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ContentUnit"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#System"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#System"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Theory"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#condition -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#condition">
+        <rdfs:label xml:lang="en">condition</rdfs:label>
+        <rdfs:label xml:lang="zh">条件</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#contentUnit -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#contentUnit">
+        <rdfs:label xml:lang="en">contentUnit</rdfs:label>
+        <rdfs:label xml:lang="zh">包含内容单元</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ContentUnit"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#equipment -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#equipment">
+        <rdfs:label xml:lang="en">equipment</rdfs:label>
+        <rdfs:label xml:lang="zh">设备</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#condition"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#example -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#example">
+        <rdfs:label xml:lang="en">example</rdfs:label>
+        <rdfs:label xml:lang="zh">示例</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model"/>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#experiment -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#experiment">
+        <rdfs:label xml:lang="en">experiment</rdfs:label>
+        <rdfs:label xml:lang="zh">相关实验</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#experimentItem -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#experimentItem">
+        <rdfs:label xml:lang="zh">试验项</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#facility -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#facility">
+        <rdfs:label xml:lang="en">facility</rdfs:label>
+        <rdfs:label xml:lang="zh">设施</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#condition"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#frequencyChannel -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#frequencyChannel">
+        <rdfs:label xml:lang="zh">频段</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#FrequencyChannel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#System"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#type"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#hasComponent -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#hasComponent">
+        <rdfs:label xml:lang="zh">组成</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#System"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#object -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#object">
+        <rdfs:label xml:lang="zh">对象</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#priciple -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#priciple">
+        <rdfs:label xml:lang="en">principle</rdfs:label>
+        <rdfs:label xml:lang="zh">相关原理</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Theory"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#radarType -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#radarType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="zh">雷达类型</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Radar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#RadarType"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#type"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#referTo -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#referTo">
+        <rdfs:label xml:lang="en">referTo</rdfs:label>
+        <rdfs:label xml:lang="zh">出处</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Source"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#subject -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#subject">
+        <rdfs:label xml:lang="en">subject</rdfs:label>
+        <rdfs:label xml:lang="zh">主题</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Concept"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#targetType -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#targetType">
+        <rdfs:label xml:lang="zh">目标类型</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#TargetType"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#type"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#type -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#type">
+        <rdfs:label xml:lang="zh">类型</rdfs:label>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#abbrevTitle -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#abbrevTitle">
+        <rdfs:label xml:lang="en">abbrevTitle</rdfs:label>
+        <rdfs:label xml:lang="zh">缩略标题</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#title"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#abstract -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#abstract">
+        <rdfs:label xml:lang="en">abstract</rdfs:label>
+        <rdfs:label xml:lang="zh">摘要</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#BookList"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#area -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#area">
+        <rdfs:label xml:lang="en">area</rdfs:label>
+        <rdfs:label xml:lang="zh">场区</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#author -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#author">
+        <rdfs:label xml:lang="en">author</rdfs:label>
+        <rdfs:label xml:lang="zh">作者</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#BookList"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#bookID -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#bookID">
+        <rdfs:label xml:lang="en">bookID</rdfs:label>
+        <rdfs:label xml:lang="zh">书目ID</rdfs:label>
+        <rdfs:comment xml:lang="zh">出处引用的书目的ID</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#identifier"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#chineseTitle -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#chineseTitle">
+        <rdfs:label xml:lang="en">chineseTitle</rdfs:label>
+        <rdfs:label xml:lang="zh">中文标题</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#title"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#content -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#content">
+        <rdfs:label xml:lang="en">content</rdfs:label>
+        <rdfs:label xml:lang="zh">内容</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Theory"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#definition -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#definition">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label xml:lang="zh">定义</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Theory"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#description -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#description">
+        <rdfs:label xml:lang="en">description</rdfs:label>
+        <rdfs:label xml:lang="zh">描述</rdfs:label>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#development -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#development">
+        <rdfs:label xml:lang="en">development</rdfs:label>
+        <rdfs:label xml:lang="zh">发展</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#englishTitle -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#englishTitle">
+        <rdfs:label xml:lang="en">englishTitle</rdfs:label>
+        <rdfs:label xml:lang="zh">英文标题</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#title"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#feature -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#feature">
+        <rdfs:label xml:lang="en">feature</rdfs:label>
+        <rdfs:label xml:lang="zh">特性</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#hypernym -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#hypernym">
+        <rdfs:label xml:lang="en">hypernym</rdfs:label>
+        <rdfs:label xml:lang="zh">上位词</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Theory"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#hyponym -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#hyponym">
+        <rdfs:label xml:lang="en">hyponym</rdfs:label>
+        <rdfs:label xml:lang="zh">下位词</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Theory"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#id -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#id">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="zh">ID</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#identifier"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#identifier -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#identifier">
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+        <rdfs:label xml:lang="zh">标识符</rdfs:label>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#isbn -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#isbn">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="zh">ISBN</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#BookList"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#identifier"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#pageRange -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#pageRange">
+        <rdfs:label xml:lang="en">pageRange</rdfs:label>
+        <rdfs:label xml:lang="zh">起止页码</rdfs:label>
+        <rdfs:comment xml:lang="zh">出处的起止页码，取值类似于：12-16</rdfs:comment>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#parameter -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#parameter">
+        <rdfs:label xml:lang="en">parameter</rdfs:label>
+        <rdfs:label xml:lang="zh">参数</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#System"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#procedure -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#procedure">
+        <rdfs:label xml:lang="en">procedure</rdfs:label>
+        <rdfs:label xml:lang="zh">流程</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#publisher -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#publisher">
+        <rdfs:label xml:lang="en">publisher</rdfs:label>
+        <rdfs:label xml:lang="zh">出版社</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#BookList"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#purpose -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#purpose">
+        <rdfs:label xml:lang="en">purpose</rdfs:label>
+        <rdfs:label xml:lang="zh">目的</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#requirement -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#requirement">
+        <rdfs:label xml:lang="en">requirement</rdfs:label>
+        <rdfs:label xml:lang="zh">要求</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#System"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#section -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#section">
+        <rdfs:label xml:lang="en">section</rdfs:label>
+        <rdfs:label xml:lang="zh">章节号</rdfs:label>
+        <rdfs:comment xml:lang="zh">出处的章节号</rdfs:comment>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#source -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#source">
+        <rdfs:label xml:lang="en">source</rdfs:label>
+        <rdfs:label xml:lang="zh">来源</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#synonym -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#synonym">
+        <rdfs:label xml:lang="en">synonym</rdfs:label>
+        <rdfs:label xml:lang="zh">同义词</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Theory"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#title -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#title">
+        <rdfs:label xml:lang="en">title</rdfs:label>
+        <rdfs:label xml:lang="zh">标题</rdfs:label>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#topTerm -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#topTerm">
+        <rdfs:label xml:lang="en">topTerm</rdfs:label>
+        <rdfs:label xml:lang="zh">族首词</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Theory"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#AerialType -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#AerialType">
+        <rdfs:label xml:lang="en">AerialType</rdfs:label>
+        <rdfs:label xml:lang="zh">天线类型</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Enumeration"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#AssembleTech -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#AssembleTech">
+        <rdfs:label xml:lang="en">AssembleTech</rdfs:label>
+        <rdfs:label xml:lang="zh">组装技术</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#BookList -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#BookList">
+        <rdfs:label xml:lang="en">BookList</rdfs:label>
+        <rdfs:label xml:lang="zh">书目</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Concept -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Concept">
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:label xml:lang="zh">skos概念类</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ContentUnit -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ContentUnit">
+        <rdfs:label xml:lang="en">ContentUnit</rdfs:label>
+        <rdfs:label xml:lang="zh">内容单元</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#DesignTech -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#DesignTech">
+        <rdfs:label xml:lang="en">DesignTech</rdfs:label>
+        <rdfs:label xml:lang="zh">设计技术</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Enumeration -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Enumeration">
+        <rdfs:label xml:lang="en">Enumeration</rdfs:label>
+        <rdfs:label xml:lang="zh">受控术语表</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment">
+        <rdfs:label xml:lang="en">Equipment</rdfs:label>
+        <rdfs:label xml:lang="zh">设备</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment">
+        <rdfs:label xml:lang="en">Experiment</rdfs:label>
+        <rdfs:label xml:lang="zh">实验</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Formula -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Formula">
+        <rdfs:label xml:lang="en">Formula</rdfs:label>
+        <rdfs:label xml:lang="zh">公式</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ContentUnit"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#FrequencyChannel -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#FrequencyChannel">
+        <rdfs:label xml:lang="en">FrequencyChannel</rdfs:label>
+        <rdfs:label xml:lang="zh">频段</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Enumeration"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ImagingTech -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ImagingTech">
+        <rdfs:label xml:lang="en">ImagingTech</rdfs:label>
+        <rdfs:label xml:lang="zh">成像技术</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ManufactureTech -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ManufactureTech">
+        <rdfs:label xml:lang="en">ManufactureTech</rdfs:label>
+        <rdfs:label xml:lang="zh">制造技术</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#MathModel -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#MathModel">
+        <rdfs:label xml:lang="en">MathModel</rdfs:label>
+        <rdfs:label xml:lang="zh">数学模型</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model">
+        <rdfs:label xml:lang="en">Model</rdfs:label>
+        <rdfs:label xml:lang="zh">模型</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#PackagingTech -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#PackagingTech">
+        <rdfs:label xml:lang="en">PackagingTech</rdfs:label>
+        <rdfs:label xml:lang="zh">封装技术</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#PhysicModel -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#PhysicModel">
+        <rdfs:label xml:lang="en">PhysicModel</rdfs:label>
+        <rdfs:label xml:lang="zh">物理模型</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Picture -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Picture">
+        <rdfs:label xml:lang="en">Picture</rdfs:label>
+        <rdfs:label xml:lang="zh">图片</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ContentUnit"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#PracticalExperiment -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#PracticalExperiment">
+        <rdfs:label xml:lang="en">PracticalExperiment</rdfs:label>
+        <rdfs:label xml:lang="zh">测试</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Radar -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Radar">
+        <rdfs:label xml:lang="en">Radar</rdfs:label>
+        <rdfs:label xml:lang="zh">雷达</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#RadarType -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#RadarType">
+        <rdfs:label xml:lang="en">RadarType</rdfs:label>
+        <rdfs:label xml:lang="zh">雷达类型</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Enumeration"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Script -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Script">
+        <rdfs:label xml:lang="en">Script</rdfs:label>
+        <rdfs:label xml:lang="zh">程序/脚本</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ContentUnit"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Simulation -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Simulation">
+        <rdfs:label xml:lang="en">Simulation</rdfs:label>
+        <rdfs:label xml:lang="zh">仿真</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Experiment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Source -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Source">
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+        <rdfs:label xml:lang="zh">出处</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#StructureModel -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#StructureModel">
+        <rdfs:label xml:lang="en">StructureModel</rdfs:label>
+        <rdfs:label xml:lang="zh">结构模型</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Model"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#System -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#System">
+        <rdfs:label xml:lang="en">System</rdfs:label>
+        <rdfs:label xml:lang="zh">系统</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Table -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Table">
+        <rdfs:label xml:lang="en">Table</rdfs:label>
+        <rdfs:label xml:lang="zh">表格</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ContentUnit"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#TargetType -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#TargetType">
+        <rdfs:label xml:lang="en">TargetType</rdfs:label>
+        <rdfs:label xml:lang="zh">目标类型</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Enumeration"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique">
+        <rdfs:label xml:lang="en">Technology</rdfs:label>
+        <rdfs:label xml:lang="zh">技术</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Terminal -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Terminal">
+        <rdfs:label xml:lang="en">Terminal</rdfs:label>
+        <rdfs:label xml:lang="zh">终端设备</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#TestTech -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#TestTech">
+        <rdfs:label xml:lang="en">TestTech</rdfs:label>
+        <rdfs:label xml:lang="zh">测试技术</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Text -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Text">
+        <rdfs:label xml:lang="en">Text</rdfs:label>
+        <rdfs:label xml:lang="zh">文本</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ContentUnit"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Theory -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Theory">
+        <rdfs:label xml:lang="en">Theory</rdfs:label>
+        <rdfs:label xml:lang="zh">原理</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Timer -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Timer">
+        <rdfs:label xml:lang="en">Timer</rdfs:label>
+        <rdfs:label xml:lang="zh">定时器</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#信号处理机 -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#信号处理机">
+        <rdfs:label xml:lang="zh">信号处理机</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#加工技术 -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#加工技术">
+        <rdfs:label xml:lang="zh">加工技术</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#发射机 -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#发射机">
+        <rdfs:label xml:lang="zh">发射机</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#天线 -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#天线">
+        <rdfs:label xml:lang="zh">天线</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#天线伺服系统 -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#天线伺服系统">
+        <rdfs:label xml:lang="zh">天线伺服系统</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#接收机 -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#接收机">
+        <rdfs:label xml:lang="zh">接收机</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#数据处理机 -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#数据处理机">
+        <rdfs:label xml:lang="zh">数据处理机</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#测向技术 -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#测向技术">
+        <rdfs:label xml:lang="zh">测向技术</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Technique"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#电子综合对抗系统 -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#电子综合对抗系统">
+        <rdfs:label xml:lang="zh">电子综合对抗系统</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#频率合成器 -->
+
+    <Class rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#频率合成器">
+        <rdfs:label xml:lang="zh">频率合成器</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#Equipment"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#air -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#air">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#TargetType"/>
+        <rdfs:label xml:lang="en">air</rdfs:label>
+        <rdfs:label xml:lang="zh">空中</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ground -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ground">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#TargetType"/>
+        <rdfs:label xml:lang="en">ground</rdfs:label>
+        <rdfs:label xml:lang="zh">地面</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ship -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#ship">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zhanglx/ontologies/2016/6/untitled-ontology-11#TargetType"/>
+        <rdfs:label xml:lang="en">ship</rdfs:label>
+        <rdfs:label xml:lang="zh">舰船</rdfs:label>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
